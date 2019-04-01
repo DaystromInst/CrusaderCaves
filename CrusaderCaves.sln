@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrusaderCaves", "CrusaderCaves\CrusaderCaves.vcxproj", "{F62E43FB-2715-4EC7-B72E-CF1EFC2BBA29}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8545BE1C-E6C0-4C6D-952A-C5D1580B0406}"
+	ProjectSection(SolutionItems) = preProject
+		..\JMarriner_COMP340_Project1\JMarriner_COMP340_Project1\LinkedList.h = ..\JMarriner_COMP340_Project1\JMarriner_COMP340_Project1\LinkedList.h
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

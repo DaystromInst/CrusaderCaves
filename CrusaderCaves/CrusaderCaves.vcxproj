@@ -151,16 +151,44 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Baphomet_Boss.h" />
+    <ClInclude Include="Czarownica.h" />
+    <ClInclude Include="HereticPawn.h" />
+    <ClInclude Include="HolsterList.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Items.h" />
+    <ClInclude Include="Kaplan.h" />
+    <ClInclude Include="KeyItem.h" />
+    <ClInclude Include="OddsAndEnds.h" />
+    <ClInclude Include="Ouch.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="Weaponry.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Baphomet_Boss.cpp" />
     <ClCompile Include="CrusaderCaves.cpp" />
+    <ClCompile Include="Czarownica.cpp" />
+    <ClCompile Include="HereticPawn.cpp" />
+    <ClCompile Include="HolsterList.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Items.cpp" />
+    <ClCompile Include="Kaplan.cpp" />
+    <ClCompile Include="KeyItem.cpp" />
+    <ClCompile Include="OddsAndEnds.cpp" />
+    <ClCompile Include="Ouch.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="Weaponry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
