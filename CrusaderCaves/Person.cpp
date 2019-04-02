@@ -88,7 +88,7 @@ int Person::attack() // calculate and return damage amount
 	calculate stats
 	*/
 
-	//damage = this->Backpack->passBlade(this->Blade); // get the weapon (or fist's) damage
+	damage = Holster.UseIt(); // get the weapon (or fist's) damage
 
 
 	return damage;

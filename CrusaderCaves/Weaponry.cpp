@@ -16,6 +16,16 @@ void Weaponry::AddThing(std::string name, int damage)
 	Claws.push_back(new Ouch(name, damage));
 }
 
-void Weaponry::UseIt(std::string title)
+int Weaponry::UseIt()
 {
+	int damage;
+
+	for (Ouch *s : this->Claws)
+	{
+		if (s->getName() == this->Equipped)
+		{
+			damage = s->getNum();
+		}
+	}
+	return damage;
 }

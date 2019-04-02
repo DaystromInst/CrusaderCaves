@@ -13,7 +13,7 @@ public:
 	~Weaponry();
 	void AddThing(std::string name, int damage);
 	void contents() { for (Ouch *s : this->Claws) { std::cout << s->getName(); } }
-	void UseIt(std::string title); // change equipped weapon
+	int UseIt(); // change equipped weapon
 
 
 protected:

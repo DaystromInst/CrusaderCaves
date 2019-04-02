@@ -9,16 +9,7 @@ HolsterList::HolsterList()
 
 HolsterList::~HolsterList()
 {
-	/*for (int i = 0; i <= 24; i++)
-	{
-		this->pockets[i].~Node();
-	}
-	this->pockets->~Node();
-	delete(this->pockets);
-	this->First->~Node();
-	delete(this->First);
-	this->Last->~Node();
-	delete(this->Last);*/
+	
 }
 
 
