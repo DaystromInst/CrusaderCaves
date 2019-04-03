@@ -12,7 +12,7 @@ public:
 	Weaponry();
 	~Weaponry();
 	void AddThing(std::string name, int damage);
-	void contents() { for (Ouch *s : this->Claws) { std::cout << s->getName(); } }
+	void contents() { for (Ouch *s : this->Claws) { std::cout << s->getName() << std::endl; } }
 	int UseIt(); // change equipped weapon
 
 
