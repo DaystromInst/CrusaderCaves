@@ -1,6 +1,6 @@
 #pragma once
 #include "Person.h"
-#include "HolsterList.h"
+#include "Weaponry.h"
 #include "Ouch.h"
 
 

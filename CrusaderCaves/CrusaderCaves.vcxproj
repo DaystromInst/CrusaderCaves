@@ -154,7 +154,6 @@
     <ClInclude Include="Baphomet_Boss.h" />
     <ClInclude Include="Czarownica.h" />
     <ClInclude Include="HereticPawn.h" />
-    <ClInclude Include="HolsterList.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Items.h" />
     <ClInclude Include="Kaplan.h" />
@@ -172,7 +171,6 @@
     <ClCompile Include="CrusaderCaves.cpp" />
     <ClCompile Include="Czarownica.cpp" />
     <ClCompile Include="HereticPawn.cpp" />
-    <ClCompile Include="HolsterList.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Items.cpp" />
     <ClCompile Include="Kaplan.cpp" />
