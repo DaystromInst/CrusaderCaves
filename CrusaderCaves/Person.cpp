@@ -78,10 +78,6 @@ void Person::ExpGain(int a) // simple experience gaining
 
 int Person::attack() // calculate and return damage amount
 {
-	//int damage;
-
-// comb through the backpack to check for an item with a name that matches this->Blade
-
 	/*
 		TO DO
 	figure out how to manage equipping weapons and armour
@@ -153,8 +149,17 @@ void Person::calcMods()
 
 int Person::tankHit(int Bite) // compare damage and attack roll to defence. return damage taken
 {
-	this->HPnow = this->HPnow - (this->Defence - Bite);
-	return (this->Health - this->HPnow);
+	int damage = 1;
+
+	damage = this->Defence - Bite;
+
+	if (damage < 0)
+	{
+		damage = 0;
+	}
+
+	this->HPnow -= damage;
+	return damage;
 }
 
 int Person::getMod(int i)

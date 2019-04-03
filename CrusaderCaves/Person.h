@@ -32,7 +32,7 @@ protected:
 
 	std::string name;
 	int Level;
-	int Experience;
+	int Experience = 0;
 	int LevelTable[20];
 
 	int Health;

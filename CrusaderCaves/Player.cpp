@@ -2,7 +2,7 @@
 #include "Player.h"
 
 
-Player::Player()
+Player::Player() : Person("Crusader")
 {
 	this->Health = 10; // initialize stats
 	this->Soul = 10;
@@ -11,9 +11,11 @@ Player::Player()
 	this->Intelligence = 10;
 	this->Resilience = 10;
 
+	this->Level = 1;
+
 	this->damage = 7;
 	//this->Backpack->AddThing();
-	Person("Crusader");
+	
 	this->Holster.AddThing("short sword", 7);
 }
 

@@ -18,14 +18,21 @@ void Weaponry::AddThing(std::string name, int damage)
 
 int Weaponry::UseIt()
 {
-	int damage;
+	int damage = 1; // needs balancing
+	bool found = false;
 
 	for (Ouch *s : this->Claws)
 	{
 		if (s->getName() == this->Equipped)
 		{
 			damage = s->getNum();
+			found = true;
 		}
+	}
+	
+	if (!found)
+	{
+		damage = 5;
 	}
 	return damage;
 }

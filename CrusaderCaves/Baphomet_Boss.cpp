@@ -2,7 +2,7 @@
 #include "Baphomet_Boss.h"
 
 
-Baphomet_Boss::Baphomet_Boss()
+Baphomet_Boss::Baphomet_Boss() : Person("Demon Lord Baphomet")
 {
 	this->name = "Demon Lord Baphomet";
 	this->Health = 30;
