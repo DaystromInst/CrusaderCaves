@@ -77,9 +77,37 @@ void Room::Finder()
 	}
 }
 
-//void Room::addUsefull(std::string title)
+void Room::addUseful(std::string title, std::string desc)
+{
+	//this->usables.push_back(title); // take the name of the usable item and push to back of the vector
+	//this->UseEvent.push_back(desc); // push the description to back
+}
+
+//void Room::UsefulEvent(std::string title)
 //{
+//	int i = 0;
+//	bool present = false; // is usable
 //
+//	for (std::string s : this->usables)
+//	{
+//		if (s == title) // if the item the player chose is usable here
+//		{
+//			std::cout << this->UseEvent[i] << std::endl;
+//			this->UseEvent.erase(this->UseEvent.begin() + (i-1));
+//			this->usables.erase(this->usables.begin() + (i - 1)); // remove the item and the description
+//			present = true;
+//			break; 
+//		}
+//		else
+//		{
+//			i++; // write down the next index number and move on
+//		}
+//	}
+//
+//	if (!present)
+//	{
+//		std::cout << "nothing happened...\n";
+//	}
 //}
 
 Person Room::getAlly(int index)

@@ -16,7 +16,7 @@ public:
 	void contents() { for (KeyItem *s : this->wares) { std::cout << s->getName() << std::endl; } }
 	void Add(std::string name, bool renew);
 	void Lose(std::string title);
-	void ContextAdd(int i, std::string labels);
+	//void ContextAdd(int i, std::string labels);
 	void UseThing(std::string title, int num);
 
 protected:

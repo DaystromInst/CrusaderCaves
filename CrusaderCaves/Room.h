@@ -16,7 +16,8 @@ public:
 	void addLoot(KeyItem *thing);
 	void addPointy(Ouch *thing);
 	void Finder(); // find items
-	//void addUsefull(std::string title); // add to the list of items the player can use in this room
+	void addUseful(std::string title, std::string desc); // add to the list of items the player can use in this room
+	//void UsefulEvent(std::string title);
 
 	Person getAlly(int index);
 	Person* getAxis(int index);
@@ -46,5 +47,6 @@ private:
 	std::vector<Ouch*> PointyBits; // weapons in room
 
 	//std::vector<std::string> usables; // items usable in this room
+	//std::vector<std::string> UseEvent; // Items are assumed to have the same index # as their desc
 
 };
