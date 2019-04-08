@@ -34,11 +34,17 @@ void OddsAndEnds::Lose(std::string title)
 	}
 }
 
-//void OddsAndEnds::ContextAdd(int i, std::string labels)
-//{
-//	KeyItem *s = this->wares.back();
-//	s->addPlace(i, labels);
-//}
+void OddsAndEnds::ContextAdd(int i, std::string title, std::string labels)
+{
+	for (KeyItem *s : this->wares)
+	{
+		if (s->getName() == title)
+		{
+			s->addPlace(i, labels);
+			std::cout << "success!\n"; // debug response
+		}
+	}
+}
 
 void OddsAndEnds::UseThing(std::string title, int num)
 {

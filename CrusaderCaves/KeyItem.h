@@ -17,8 +17,7 @@ public:
 protected:
 	std::string name;
 	bool reusable;
-	// list/vector of places usable
-	std::vector<int> places;
+
 	// potential use for a durability int
 
 	// list/vector of descriptions of each use

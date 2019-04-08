@@ -17,44 +17,31 @@ KeyItem::KeyItem()
 
 KeyItem::~KeyItem()
 {
-	/*for (int i = 0; i < this->places.size(); i=+0)
-	{
-		this->places.pop_back();
-	}
-	for (int i = 0; i < this->description.size(); i = +0)
-	{
-		this->description.pop_back();
-	}
-
-	this->places.~vector();
-	this->description.~vector();
-	this->name.~basic_string();*/
+	
 }
 
 void KeyItem::Use(int roomno)
 {
-	for (int i = 0; i <= this->places.size(); i++)
-	{
+	/*for (int i = 0; i <= this->places.size(); i++)
+	{*/
 		try
 		{
-			if (roomno == places[i])
-			{
-				std::cout << description[i];
-				places.erase(places.begin() + (i - 1));
-				description.erase(description.begin() + (i - 1));
-				break;
-			}
+			/*if (roomno == places[i])
+			{*/
+				std::cout << description[roomno];
+				//description.erase(description.begin() + (roomno - 1)); 
+			//}
 		}
 		catch (int fob)
 		{
-			continue;
+			//continue;
 		}
-	}
-	std::cout << "nothing happens...\n";
+	//}
 }
 
 void KeyItem::addPlace(int f, std::string describe)
 {
-	this->places.push_back(f);
+	//this->places.push_back(f);
 	this->description.push_back(describe);
+	//this->description[f] = describe;
 }
