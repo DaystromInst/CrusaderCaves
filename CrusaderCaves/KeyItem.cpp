@@ -28,7 +28,7 @@ void KeyItem::Use(int roomno)
 		{
 			/*if (roomno == places[i])
 			{*/
-				std::cout << description[roomno];
+				std::cout << this->description[roomno];
 				//description.erase(description.begin() + (roomno - 1)); 
 			//}
 		}

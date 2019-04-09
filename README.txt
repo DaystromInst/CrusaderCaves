@@ -10,7 +10,7 @@ I trust you're smart enough to know that but hey people get confused about thing
 
 ~=FIGHT COMMANDS=~		~=EFFECT=~
 swing				attack with the equipped melee weapon
-use <item>			uses the item with the given name [TESTING IN PROGRESS]
+use <item>			uses the item with the given name [BASIC FUNCTIONALITY]
 items				list the usable items
 miracles			list the player's miracles [NOT YET IMPLEMENTED]
 cast <miracle>			cast the miracle with the given name [NOT YET IMPLEMENTED]

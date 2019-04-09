@@ -41,7 +41,7 @@ void OddsAndEnds::ContextAdd(int i, std::string title, std::string labels)
 		if (s->getName() == title)
 		{
 			s->addPlace(i, labels);
-			std::cout << "success!\n"; // debug response
+			//std::cout << "\n\nsuccess!\n\n"; // debug response
 		}
 	}
 }

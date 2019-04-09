@@ -86,22 +86,34 @@ void Room::addUseful(std::string title)
 bool Room::UsefulEvent(std::string title)
 {
 	int i = 0;
+
 	bool present = false; // is usable
+	//std::cout << "in UsefulEvent() entering the loop\n\n";
 
 	for (std::string s : this->usables)
 	{
+		//std::cout << i << std::endl;
+		
 		if (s == title) // if the item the player chose is usable here
 		{
 			//std::cout << this->UseEvent[i] << std::endl;
 			//this->UseEvent.erase(this->UseEvent.begin() + (i-1));
-			this->usables.erase(this->usables.begin() + (i - 1)); // remove the item and the description
+
+			//if (i == 0)
+			//{
+			//	this->usables.erase(this->usables.begin()); // remove the item and the description
+			//}
+			//else if (i == 1)
+			//{
+
+			//}
+			this->usables.erase(this->usables.begin() + i); // remove the item and the description
+			
+			
 			present = true;
 			break; 
 		}
-		else
-		{
-			i++; // write down the next index number and move on
-		}
+		i++; // write down the next index number and move on
 	}
 
 	if (!present)
