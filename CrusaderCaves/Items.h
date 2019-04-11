@@ -19,6 +19,6 @@ public:
 protected:
 	std::string name;
 	bool reusable;
-	std::list<std::string> commandyBois;
+	std::list<std::string> commandyBois; // redundant? tinker with on next commit
 };
 
