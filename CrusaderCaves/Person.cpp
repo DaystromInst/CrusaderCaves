@@ -149,7 +149,7 @@ void Person::calcMods()
 
 int Person::tankHit(int Bite) // compare damage and attack roll to defence. return damage taken
 {
-	int damage = 1;
+	int damage = 1; // declare and initialize damage taken
 
 	damage = this->Defence - Bite;
 
@@ -159,6 +159,8 @@ int Person::tankHit(int Bite) // compare damage and attack roll to defence. retu
 	}
 
 	this->HPnow -= damage;
+	std::cout << this->name << " took " << damage << " damage!\n";
+	std::cout << this->HPnow << " health remaining.\n";
 	return damage;
 }
 
